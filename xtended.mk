@@ -21,10 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from cheeseburger device
 $(call inherit-product, device/oneplus/cheeseburger/device.mk)
 
-# Inherit some common Validus stuff.
-$(call inherit-product, vendor/validus/config/common_full_phone.mk)
+# Inherit some common XTENDED stuff.
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
-PRODUCT_NAME := validus_cheeseburger
+PRODUCT_NAME := xtended_cheeseburger
 PRODUCT_DEVICE := cheeseburger
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -34,9 +34,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 TARGET_VENDOR_PRODUCT_NAME := OnePlus5
 TARGET_VENDOR_DEVICE_NAME := OnePlus5
-
-# Maintainer info
-PRODUCT_BUILD_PROP_OVERRIDES += DEVICE_MAINTAINERS="Martin Coulon (Martinusbe)"
 
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=OnePlus5 PRODUCT_NAME=OnePlus5
 
